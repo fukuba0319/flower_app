@@ -10,6 +10,27 @@
   </head>
 
   <body>
-    <%= yield %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top navbar-transparent">
+      <div class="container">
+        <%= link_to "癒やしの花", root_path, id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "ホーム",   root_path %></li>
+            <li><%= link_to "このサイトの使い方", about_path %></li>
+            <li><%= link_to "写真一覧",   '#' %></li>
+            <li><%= link_to "ログイン", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>    
+    <div class="container">
+      <%= yield %>
+    </div>  
   </body>
 </html>

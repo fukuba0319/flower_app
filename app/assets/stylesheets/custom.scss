@@ -1,0 +1,69 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+body {
+  padding-top: 60px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('IMG_20170306_232135_881.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+
+
+
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: lighter;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-transparent {
+  background-color: rgba(0,0,0,0.5);
+}  
+
+
+
+
+h1 {
+  color: #98FB98;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #98FB98;
+  margin-bottom: 30px;
+}
+
+.about {
+  color: #00FF00;
+}
+
