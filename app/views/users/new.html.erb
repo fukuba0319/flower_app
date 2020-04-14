@@ -1,0 +1,21 @@
+<div class="title">新規登録</div>
+
+<div class="center jumbotron">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= form_for(@user) do |f| %>
+        <%= f.label :名前（写真を投稿すると名前が表示されます。嫌な方は代わりのニックネームを入力してください。） %>
+        <%= f.text_field :name %>
+
+        <%= f.label :Eメール %>
+        <%= f.email_field :email %>
+
+
+
+
+
+        <%= f.submit "新規登録", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>
