@@ -3,10 +3,15 @@
     <%= link_to "癒やしの花", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "ホーム",   root_path %></li>
         <li><%= link_to "このサイトの使い方", about_path %></li>
         <li><%= link_to "写真一覧",   '#' %></li>
-        <li><%= link_to "ログイン", '#' %></li>
+        
+        <% if logged_in? %>
+          <li><%= link_to "写真を投稿する",   '#' %></li>
+          <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
+        <% else %>  
+          <li><%= link_to "ログイン", login_path %></li>
+        <% end %>  
       </ul>
     </nav>
   </div>
