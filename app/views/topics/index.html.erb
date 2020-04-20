@@ -1,3 +1,20 @@
+<div class="row">
+ <div class="col-md-3 col-md-offset-3">
+  <%= search_form_for @q do |f| %>
+    <%= f.label :kind_cont, "お花・植物の名前を検索すると、投稿されているか調べられます。" %>
+    <%= f.search_field :kind_cont %>
+  
+    <%= f.submit "検索", class: "btn btn-primary" %>
+  <% end %>  
+ </div>
+</div>
+
+<div class="row">
+  <div class="col-md-offset-3">
+   <%= paginate @topics %>
+ </div>
+</div>
+
 <% @topics.each do |topic| %>
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
@@ -18,3 +35,9 @@
     </div>
   </div>
 <% end %>
+
+<div class="row">
+  <div class="col-md-offset-3">
+   <%= paginate @topics %>
+ </div>
+</div>

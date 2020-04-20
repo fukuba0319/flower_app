@@ -1,6 +1,8 @@
 class TopicsController < ApplicationController
   def index
     @topics = Topic.all
+    @q = Topic.ransack(params[:q])
+    @topics = @q.result.page(params[:page]).per(10)
   end   
   
   def new

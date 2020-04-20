@@ -75,3 +75,7 @@ gem 'jquery-rails'
 gem 'bcrypt'
 
 gem "carrierwave"
+
+gem "ransack"
+
+gem "kaminari"
