@@ -4,10 +4,10 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "このサイトの使い方", about_path %></li>
-        <li><%= link_to "写真一覧",   '#' %></li>
+        <li><%= link_to "写真一覧", topics_path %></li>
         
         <% if logged_in? %>
-          <li><%= link_to "写真を投稿する",   '#' %></li>
+          <li><%= link_to "写真を投稿する", new_topic_path  %></li>
           <li><%= link_to "ログアウト", logout_path, method: :delete %></li>
         <% else %>  
           <li><%= link_to "ログイン", login_path %></li>

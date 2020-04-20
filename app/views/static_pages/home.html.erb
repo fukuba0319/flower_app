@@ -6,14 +6,14 @@
       <div class="sub-title">素敵なお花の写真をみんなで共有しよう！</div>
 
       <% if logged_in? %>
-        <%= link_to "写真を投稿する", '#', class: "btn btn-lg btn-primary" %>
+        <%= link_to "写真を投稿する", new_topic_path, class: "btn btn-lg btn-primary" %>
       <% else %>  
         <%= link_to "新規登録", new_user_path, class: "btn btn-lg btn-primary" %>
         <%= link_to "ログイン", login_path , class: "btn btn-lg btn-primary" %>
       <% end %>
       
       
-      <%= link_to "写真一覧", '#', class: "btn btn-lg btn-primary" %>
+      <%= link_to "写真一覧", topics_path, class: "btn btn-lg btn-primary" %>
   </div>
 </div>
 </div>
