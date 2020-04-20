@@ -19,7 +19,9 @@
          <%= f.text_area :description, class: 'form-control' %>
        </div>
        
-       <%= f.submit "投稿", class: "btn btn-primary" %>
+       <% if logged_in? %>
+         <%= f.submit "投稿", class: "btn btn-primary" %>
+       <% end %>
           
      <% end %>
    </div>        
