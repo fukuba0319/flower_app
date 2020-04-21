@@ -83,5 +83,3 @@ gem "carrierwave"
 gem "ransack"
 
 gem "kaminari"
-
-gem 'cloudinary'
