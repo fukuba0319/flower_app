@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: djrgycrbg
+  api_key: '514156876619749'
+  api_secret: 8nheLn8jvofpPmIx0GNdy1Baxf8
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: djrgycrbg
+  api_key: '514156876619749'
+  api_secret: 8nheLn8jvofpPmIx0GNdy1Baxf8
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: djrgycrbg
+  api_key: '514156876619749'
+  api_secret: 8nheLn8jvofpPmIx0GNdy1Baxf8
+  enhance_image_tag: true
+  static_file_support: false
