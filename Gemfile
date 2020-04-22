@@ -84,4 +84,3 @@ gem "ransack"
 
 gem "kaminari"
 
-gem 'cloudinary'

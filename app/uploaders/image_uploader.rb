@@ -49,6 +49,5 @@ class ImageUploader < CarrierWave::Uploader::Base
     1..10.megabytes
   end  
   
-  include Cloudinary::CarrierWave if Rails.env.production?
-  
+
 end
